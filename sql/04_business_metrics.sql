@@ -18,3 +18,13 @@ SELECT
 FROM orders o
 JOIN order_payments op ON o.order_id = op.order_id
 WHERE o.order_status = 'delivered';
+
+--Customers by order status
+SELECT
+	o.order_status,
+	COUNT(*) AS pedidos,
+	COUNT(DISTINCT c.customer_unique_id) AS clientes
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+GROUP BY o.order_status
+ORDER BY pedidos DESC;
