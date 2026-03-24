@@ -1,3 +1,6 @@
+# Summary
+This analysis explores customer behavior, revenue distribution, and operational performance using SQL queries on an e-commerce dataset.
+
 # Key Findings
 
 ## Operational Performance
@@ -18,14 +21,16 @@
 ## Customer Behavior
 
 - A portion of customers makes more than one purchase, indicating recurring behavior.
-- This suggests potential for retention strategies and customer lifetime value growth.
+- This suggests opportunities for retention strategies and increasing customer lifetime value.
 
 ---
 
 ## Customer Segmentation
 
 - Only 1.27% of customers are considered high-value (total spend > R$1000).
-- These customers represent a small but important segment of the business.
+- These customers account for 12.17% of total revenue.
+- This indicates a strategically important customer segment with a higher financial impact.
+- Revenue is not highly concentrated, suggesting a relatively well-distributed customer base.
 
 ---
 
@@ -33,11 +38,13 @@
 
 - The number of orders is higher than the number of customers across most statuses, indicating repeat purchases.
 - Some customers appear in multiple order statuses, reinforcing that status is linked to orders, not customers.
+- There are no customers without orders, indicating the dataset only includes customers who have made purchases.
+- There are more canceled orders than customers, suggesting some customers canceled more than once. This may indicate potential issues in customer experience or operational processes.
 
 ---
 
 ## Recommendations
 
-- Monitor cancellation patterns to identify potential operational issues
-- Develop retention strategies for recurring customers
-- Explore targeted actions for high-value customers
+- Monitor cancellation patterns to identify potential operational issues.
+- Develop retention strategies for recurring customers.
+- Explore targeted actions for high-value customers.
