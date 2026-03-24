@@ -33,3 +33,11 @@
 
 - The number of orders is higher than the number of customers across most statuses, indicating repeat purchases.
 - Some customers appear in multiple order statuses, reinforcing that status is linked to orders, not customers.
+
+---
+
+## Recommendations
+
+- Monitor cancellation patterns to identify potential operational issues
+- Develop retention strategies for recurring customers
+- Explore targeted actions for high-value customers
