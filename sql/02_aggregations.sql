@@ -47,3 +47,18 @@ SELECT
 FROM order_payments
 GROUP BY payment_type
 ORDER BY revenue DESC;
+
+--Avegrage orders by month
+SELECT
+	month,
+	AVG(total_orders) AS media_orders
+FROM (
+	SELECT
+		STRFTIME('%Y', order_purchase_timestamp) AS year,
+		STRFTIME('%m', order_purchase_timestamp) AS month,
+		COUNT(*) AS total_orders
+	FROM orders
+	GROUP BY year, month
+) t
+GROUP BY month
+ORDER BY month;
