@@ -1,18 +1,23 @@
---Título
+-- Join queries to explore relationships between tables
 
---Users with no orders
-SELECT COUNT(DISTINCT c.customer_unique_id) AS customers_zero_orders
+-- Customers with orders
+SELECT COUNT(*)
+FROM customers c
+JOIN orders o ON c.customer_id = o.customer_id;
+
+-- Customers without orders
+SELECT COUNT(*)
 FROM customers c
 LEFT JOIN orders o ON c.customer_id = o.customer_id
 WHERE o.order_id IS NULL;
 
---Customers by order status
-SELECT
-	o.order_status,
-	COUNT(*) AS pedidos,
-	COUNT(DISTINCT c.customer_unique_id) AS clientes
+-- Orders without payments
+SELECT COUNT(*)
 FROM orders o
-JOIN customers c ON o.customer_id = c.customer_id
-GROUP BY o.order_status
-ORDER BY pedidos DESC;
+LEFT JOIN order_payments op ON o.order_id = op.order_id
+WHERE op.order_id IS NULL;
 
+-- Orders with customers (validation)
+SELECT COUNT(*)
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id;
