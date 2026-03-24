@@ -86,15 +86,14 @@ Shows the importance of a small but impactful customer segment.
 
 ## Project Structure
 
-sql/
-│
-├── 01_basic_queries.sql
-├── 02_aggregations.sql
-├── 03_joins.sql
-└── 04_business_metrics.sql
+sql
+- 01_basic_queries.sql
+- 02_aggregations.sql
+- 03_joins.sql
+- 04_business_metrics.sql
 
-insights/
-└── findings.md
+insights
+- findings.md
 
 
 ---
