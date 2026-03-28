@@ -7,18 +7,18 @@ The goal is to simulate real-world business questions and extract actionable ins
 ---
 
 ## Objectives
-- To understand customer purchasing behavior
-- Analyze revenue distribution
-- Evaluate operational performance (deliveries and cancellations)
-- Identify opportunities for business improvement
+- To understand customer purchasing behavior;
+- Analyze revenue distribution;
+- Evaluate operational performance (deliveries and cancellations);
+- Identify opportunities for business improvement.
 
 ---
 
 ## Dataset
-The dataset contains information about:
-- Customers
-- Orders
-- Payments
+The dataset used is [Brazilian E-Commerce Public Dataset by Olist](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce) and it contains information about:
+- Customers;
+- Orders;
+- Payments;
 
 Key tables used:
 - `customers`
@@ -86,13 +86,13 @@ Shows the importance of a small but impactful customer segment.
 
 ## Project Structure
 
-[sql](./sql/)
+[Sql](./sql/)
 - 01_basic_queries.sql
 - 02_aggregations.sql
 - 03_joins.sql
 - 04_business_metrics.sql
 
-[insights](./insights/)
+[Insights](./insights/)
 - findings.md
 
 
@@ -105,5 +105,4 @@ Shows the importance of a small but impactful customer segment.
 
 ---
 
-## Author
 Developed as part of a hands-on SQL learning journey focused on real-world business analysis.
