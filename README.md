@@ -3,6 +3,7 @@
 ## Project Overview
 This project explores an e-commerce dataset using SQL to analyze customer behavior, revenue distribution, and operational performance.
 The goal is to simulate real-world business questions and extract actionable insights from raw data.
+Developed as part of a hands-on SQL learning journey focused on real-world business analysis.
 
 ---
 
@@ -102,7 +103,3 @@ Shows the importance of a small but impactful customer segment.
 - Add data visualization (Power BI / Tableau)
 - Explore customer lifetime value (CLV)
 - Analyze churn behavior
-
----
-
-Developed as part of a hands-on SQL learning journey focused on real-world business analysis.
